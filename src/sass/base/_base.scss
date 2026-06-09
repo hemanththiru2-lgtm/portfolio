@@ -1,0 +1,85 @@
+html {
+  font-size: 62.5%;
+
+  &.sr .load-hidden {
+    visibility: hidden;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+  background-color: $bg-dark;
+  color: #b0b3c6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: $bg-dark;
+}
+::-webkit-scrollbar-thumb {
+  background: $light-grey;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $primary-color;
+}
+
+/* Custom Cursor */
+@media (pointer: fine) {
+  html, body {
+    cursor: none;
+  }
+  
+  a, button, [role="button"], .js-tilt, input, textarea {
+    cursor: none;
+  }
+
+  .custom-cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: $secondary-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+  }
+
+  .custom-cursor-ring {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid rgba($secondary-color, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9998;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.3s ease-out, border-color 0.3s, background-color 0.3s;
+  }
+
+  .cursor-hover {
+    .custom-cursor-dot {
+      width: 12px;
+      height: 12px;
+      background-color: $primary-color;
+    }
+    .custom-cursor-ring {
+      width: 50px;
+      height: 50px;
+      border-color: rgba($primary-color, 0.8);
+      background-color: rgba($primary-color, 0.05);
+    }
+  }
+}
