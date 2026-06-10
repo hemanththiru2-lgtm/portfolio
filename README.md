@@ -35,7 +35,7 @@ Welcome to my portfolio! I am an Electronics and Communication Engineering (ECE)
 
 ## 📬 Contact Info
 
-*   **Email**: [hemanthhemanththiru2@gmail.com](mailto:hemanthhemanththiru2@gmail.com)
+*   **Email**: [hemanththiru2@gmail.com](mailto:hemanththiru2@gmail.com)
 *   **LinkedIn**: [Hemanth Thirumurthy](https://www.linkedin.com/in/hemanth-thirumurthy-0579352a0)
 *   **GitHub**: [hemanththiru2-lgtm](https://github.com/hemanththiru2-lgtm)
 *   **Phone**: +91 9363485876
